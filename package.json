@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "description": "A project template for authoring and publishing JavaScript libraries",
   "homepage": "https://www.kriasoft.com/babel-starter-kit/",
-  "repository": "kriasoft/babel-starter-kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kriasoft/babel-starter-kit.git"
+  },
   "author": "Kriasoft <hello@kriasoft.com> (https://www.kriasoft.com)",
   "contributors": [
     "Konstantin Tarkus <hello@tarkus.me>",
@@ -31,7 +34,8 @@
     "babel-cli": "^6.18.0",
     "babel-runtime": "^6.11.6",
     "cors": "^2.8.1",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "skb": "^1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -65,5 +69,12 @@
     "publish:docs": "easystatic deploy docs --repo kriasoft/babel-starter-kit",
     "dev": "nodemon --exec babel-node -- src/index.js",
     "start": "easystatic start docs"
+  },
+  "bugs": {
+    "url": "https://github.com/kriasoft/babel-starter-kit/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
   }
 }
